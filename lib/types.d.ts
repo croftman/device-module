@@ -10,6 +10,8 @@ interface Device {
   isTablet: boolean
   isWindows: boolean
   isMacOS: boolean
+  isPortrait: boolean
+  isLandscape: boolean
 }
 
 declare module '@nuxt/vue-app' {
@@ -23,6 +25,8 @@ declare module '@nuxt/vue-app' {
     isTablet: boolean
     isWindows: boolean
     isMacOS: boolean
+    isPortrait: boolean
+    isLandscape: boolean
   }
 
   interface NuxtAppOptions {
@@ -42,6 +46,8 @@ declare module '@nuxt/types' {
     isTablet: boolean
     isWindows: boolean
     isMacOS: boolean
+    isPortrait: boolean
+    isLandscape: boolean
   }
   interface NuxtAppOptions {
     $device: Device
